@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/main.min.css" />
+
+    <!-- Iconify -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="navbar">
+      <nav class="navbar fixed-top navbar-expand-lg bg-white">
+        <div class="container">
+          <img src="/assets/logo.png" alt="Logo" width="120" height="55" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Beranda</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Destinasi </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Wisata</a></li>
+                  <li><a class="dropdown-item" href="#">Kuliner</a></li>
+                  <li><a class="dropdown-item" href="#">Hotel Dan Penginapan</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Event</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Seni Budaya</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item" role="search">
+                <iconify-icon icon="material-symbols:search" class="text-primary nav-link" width="1.5rem" height="1.5rem"></iconify-icon>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="carousel-inner">
+        <div class="carousel-item active position-relative">
+          <img src="assets/image-carousel.png" class="carousel-image w-auto" alt="slide-img-1" />
+          <div class="container">
+            <div class="position-absolute text-white mb-5" style="top: 45%; transform: translateY(-50%)">
+              <h1 class="display-4 fw-semibold">10 Hotel Terbaik Untuk Liburan</h1>
+              <p class="fw-normal w-75">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, officiis mollitia! Ea est aut ipsam ipsum, voluptate vitae nemo beatae deserunt sequi quasi laboriosam totam earum
+                inventore! Facilis illo ex accusamus explicabo eum modi repellat magnam labore nam eius minima, error corporis iure hic numquam impedit sint laborum suscipit atque!
+              </p>
+              <div class="d-flex align-items-center gap-2 mt-4">
+                <span>
+                  <a href="#" class="text-white text-decoration-none">Selengkapnya </a>
+                </span>
+                <iconify-icon icon="formkit:arrowright" class="text-white" width="2rem" height="2rem"></iconify-icon>
+              </div>
+            </div>
+
+            <!-- Berita Terkini -->
+            <div class="position-absolute bottom-0 my-5">
+              <div class="row">
+                <div class="col">
+                  <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2"></div>
+                  <div class="d-block">
+                    <h4 class="text-primary mt-3 mb-3 fw-semibold">Berita Terkini</h4>
+                    <span class="fs-4 text-white">10 Hotel Terbaik Untuk Liburan</span>
+                    <p class="fs-6 mt-1 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
+                  </div>
+                </div>
+                <!-- <div class="col">
+                  <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2">
+                    <h3 class="text-primary mt-4 mb-3 fw-semibold">Berita Terkini</h3>
+                    <span class="fs-5 text-white">10 Hotel Terbaik Untuk Liburan</span>
+                    <p class="fs-6 mt-2 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
+                  </div>
+                </div> -->
+                <!-- <div class="col">
+                  <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2">
+                    <h3 class="text-primary mt-4 mb-3 fw-semibold">Berita Terkini</h3>
+                    <span class="fs-5 text-white">10 Hotel Terbaik Untuk Liburan</span>
+                    <p class="fs-6 mt-2 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button> -->
+    </section>
+
+    <section id="insight">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="my-5">
+                <h5 class="text-primary">Insight Untuk Anda</h5>
+                <div class="row">
+                  <div class="col-lg-6 col-12 mt-3">
+                    <h4 class="fw-semibold mb-2">10 Hotel Terbaik Untuk Liburan</h4>
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or</p>
+                    <div class="d-flex align-items-center gap-2 mt-3">
+                      <span>
+                        <a href="#" class="text-primary text-decoration-none">Selengkapnya </a>
+                      </span>
+                      <iconify-icon icon="formkit:arrowright" class="text-primary" width="2rem" height="2rem"></iconify-icon>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <img src="assets/insight-1.png" alt="Insight 1" width="250" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="my-5">
+                <h5 class="text-primary">Insight Untuk Anda</h5>
+                <div class="row">
+                  <div class="col-lg-6 col-12 mt-3">
+                    <h4 class="fw-semibold mb-2">10 Hotel Terbaik Untuk Liburan</h4>
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or</p>
+                    <div class="d-flex align-items-center gap-2 mt-3">
+                      <span>
+                        <a href="#" class="text-primary text-decoration-none">Selengkapnya </a>
+                      </span>
+                      <iconify-icon icon="formkit:arrowright" class="text-primary" width="2rem" height="2rem"></iconify-icon>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <img src="assets/insight-1.png" alt="Insight 1" width="250" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="my-5">
+                <h5 class="text-primary">Insight Untuk Anda</h5>
+                <div class="row">
+                  <div class="col-lg-6 col-12 mt-3">
+                    <h4 class="fw-semibold mb-2">10 Hotel Terbaik Untuk Liburan</h4>
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or</p>
+                    <div class="d-flex align-items-center gap-2 mt-3">
+                      <span>
+                        <a href="#" class="text-primary text-decoration-none">Selengkapnya </a>
+                      </span>
+                      <iconify-icon icon="formkit:arrowright" class="text-primary" width="2rem" height="2rem"></iconify-icon>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <img src="assets/insight-1.png" alt="Insight 1" width="250" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="my-5">
+                <h5 class="text-primary">Insight Untuk Anda</h5>
+                <div class="row">
+                  <div class="col-lg-6 col-12 mt-3">
+                    <h4 class="fw-semibold mb-2">10 Hotel Terbaik Untuk Liburan</h4>
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or</p>
+                    <div class="d-flex align-items-center gap-2 mt-3">
+                      <span>
+                        <a href="#" class="text-primary text-decoration-none">Selengkapnya </a>
+                      </span>
+                      <iconify-icon icon="formkit:arrowright" class="text-primary" width="2rem" height="2rem"></iconify-icon>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <img src="assets/insight-1.png" alt="Insight 1" width="250" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        loop: true,
+        slidesPerView: 'auto',
+        breakpoints: {
+          // Breakpoint untuk layar desktop
+          768: {
+            slidesPerView: 2,
+          },
+          // Breakpoint untuk layar hp
+          0: {
+            slidesPerView: 1,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
