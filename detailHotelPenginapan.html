@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Hotel & Penginapan</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/main.min.css" />
+
+    <!-- Iconify -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="navbar">
+      <nav class="navbar fixed-top navbar-expand-lg bg-white">
+        <div class="container">
+          <a href="index.html">
+            <img src="/assets/logo.png" alt="Logo" width="120" height="55" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Beranda</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Destinasi </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="wisata.html">Wisata</a></li>
+                  <li><a class="dropdown-item" href="kuliner.html">Kuliner</a></li>
+                  <li><a class="dropdown-item" href="hotelpenginapan.html">Hotel Dan Penginapan</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="event.html">Event</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="senibudaya.html">Seni Budaya</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item" role="search">
+                <iconify-icon icon="material-symbols:search" class="text-primary nav-link" width="1.5rem" height="1.5rem"></iconify-icon>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Detail Wisata -->
+    <section id="detailWisata">
+      <div class="container my-5 pt-5">
+        <div class="mt-4 mb-5">
+          <div class="d-flex align-items-center gap-2">
+            <iconify-icon icon="formkit:arrowleft" width="2rem" height="2rem"></iconify-icon>
+            <span>
+              <a href="hotelpenginapan.html" class="text-dark text-decoration-none">Kembali Ke Halaman Sebelumnya</a>
+            </span>
+          </div>
+        </div>
+        <div class="d-block">
+          <h1 class="fw-bold text-primary">Hotel Sambas Indah</h1>
+          <span>Hotel & Penginapan</span>
+        </div>
+
+        <!-- Gambar -->
+        <div id="carouselExample" class="carousel slide mt-5">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/detail-hotel.png" class="d-block w-100 rounded-4" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/detail-hotel.png" class="d-block w-100 rounded-4" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/detail-hotel.png" class="d-block w-100 rounded-4" alt="..." />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <iconify-icon icon="ic:baseline-arrow-circle-left" class="carousel-control-prev-icon text-white" width="3rem" height="3rem"></iconify-icon>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <iconify-icon icon="ic:baseline-arrow-circle-right" class="carousel-control-next-icon text-white" width="3rem" height="3rem"></iconify-icon>
+          </button>
+        </div>
+
+        <!-- Tabs -->
+        <div class="mt-5">
+          <div class="row">
+            <div class="col-lg-7 mb-4">
+              <ul class="nav nav-pills mb-3 justify-content-lg-start justify-content-md-start justify-content-between gap-md-4" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                    Deskripsi
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                    Maps
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                    Pesan & Kesan
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <!-- Deskripsi Tabs -->
+                <div class="tab-pane fade show active mt-4" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis necessitatibus quisquam repudiandae exercitationem ex! Illo qui, explicabo et ut deserunt molestias. Sed assumenda vero
+                  dolore laborum nam ad quae sapiente ab? Provident odit officiis enim dolores eum soluta libero. Cupiditate.
+                </div>
+
+                <!-- Maps Tabs -->
+                <div class="tab-pane fade mt-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                  <div class="w-100">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1021048.5943654629!2d108.66963336547012!3d1.4890084509818073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31e4c6f5a0740299%3A0x6c63ef7cfcd2b27c!2sKabupaten%20Sambas%2C%20Kalimantan%20Barat!5e0!3m2!1sid!2sid!4v1709121520795!5m2!1sid!2sid"
+                      width="850"
+                      height="300"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      class="rounded-4 w-100"
+                    ></iframe>
+                  </div>
+
+                  <button class="btn btn-primary p-3 mt-3 d-flex ms-auto rounded-3">
+                    <a
+                      href="https://www.google.com/maps/place/Kabupaten+Sambas,+Kalimantan+Barat/@1.4890085,108.6696334,9z/data=!3m1!4b1!4m6!3m5!1s0x31e4c6f5a0740299:0x6c63ef7cfcd2b27c!8m2!3d1.3625191!4d109.2831531!16s%2Fm%2F0dsb8tg?entry=ttu"
+                      class="text-white text-decoration-none"
+                      >Buka Di Google Maps</a
+                    >
+                  </button>
+                </div>
+
+                <!-- Form Tabs -->
+                <div class="tab-pane fade mt-4" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <div class="mb-3">
+                          <label for="judul" class="form-label fw-bold">Judul</label>
+                          <input type="text" class="form-control p-4 rounded-4" id="judul" aria-describedby="judul" placeholder="Masukkan Judul Disini..." />
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-12">
+                        <div class="mb-3">
+                          <label for="namaPenulis" class="form-label fw-bold">Nama Penulis</label>
+                          <input type="text" class="form-control p-4 rounded-4" id="judul" aria-describedby="namaPenulis" placeholder="Masukkan Nama Penulis Disini..." />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="isiPesan" class="form-label fw-bold">Isi Pesan</label>
+                          <textarea class="form-control p-4 rounded-4" id="isiPesan" rows="8" placeholder="Masukkan Isi Pesan Disini..."></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary p-3 mt-3 d-flex ms-auto rounded-3 text-white">Posting Pesan & Kesan</button>
+                  </form>
+                  <hr class="my-5" />
+                  <div id="pesanKesan">
+                    <!-- Pesan 1 -->
+                    <div class="d-block">
+                      <span class="text-secondary">Anne Holden</span>
+                      <h5 class="text-primary fw-semibold mt-2">Kesan berkunjung dan berwisata</h5>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione cupiditate hic quasi ducimus dolor explicabo quod distinctio labore. Corrupti, iste.</p>
+                    </div>
+
+                    <!-- Pesan 2 -->
+                    <div class="d-block">
+                      <span class="text-secondary">Anne Holden</span>
+                      <h5 class="text-primary fw-semibold mt-2">Kesan berkunjung dan berwisata</h5>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione cupiditate hic quasi ducimus dolor explicabo quod distinctio labore. Corrupti, iste.</p>
+                    </div>
+
+                    <!-- Pesan 3 -->
+                    <div class="d-block">
+                      <span class="text-secondary">Anne Holden</span>
+                      <h5 class="text-primary fw-semibold mt-2">Kesan berkunjung dan berwisata</h5>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione cupiditate hic quasi ducimus dolor explicabo quod distinctio labore. Corrupti, iste.</p>
+                    </div>
+
+                    <!-- Pesan 4 -->
+                    <div class="d-block">
+                      <span class="text-secondary">Anne Holden</span>
+                      <h5 class="text-primary fw-semibold mt-2">Kesan berkunjung dan berwisata</h5>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione cupiditate hic quasi ducimus dolor explicabo quod distinctio labore. Corrupti, iste.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 mb-4">
+              <div class="bg-white shadow-lg rounded-4">
+                <div class="d-flex align-items-center gap-3 px-4 pt-4 pb-1">
+                  <iconify-icon icon="mdi:warning-circle" width="1.5rem" height="1.5rem"></iconify-icon>
+                  <span class="fw-semibold text-black">Detail Informasi Hotel</span>
+                </div>
+                <hr />
+                <div class="p-4">
+                  <table class="table">
+                    <tbody>
+                      <!-- No Telepon -->
+                      <tr>
+                        <td class="text-secondary border-0">No Telepon &nbsp; :</td>
+                        <td class="text-primary border-0 fw-semibold text-end">+62812345678</td>
+                      </tr>
+
+                      <!-- Klasifikasi -->
+                      <tr>
+                        <td class="text-secondary border-0">Klasifikasi &nbsp; :</td>
+                        <td class="d-flex border-0 text-primary text-end justify-content-end">
+                          <iconify-icon icon="material-symbols:star" width="1.3rem" height="1.3rem"></iconify-icon>
+                          <iconify-icon icon="material-symbols:star" width="1.3rem" height="1.3rem"></iconify-icon>
+                          <iconify-icon icon="material-symbols:star" width="1.3rem" height="1.3rem"></iconify-icon>
+                          <iconify-icon icon="material-symbols:star" width="1.3rem" height="1.3rem"></iconify-icon>
+                          <iconify-icon icon="material-symbols:star" width="1.3rem" height="1.3rem"></iconify-icon>
+                        </td>
+                      </tr>
+
+                      <!-- Alamat -->
+                      <tr>
+                        <td class="text-secondary border-0">Alamat &nbsp; :</td>
+                        <td class="text-primary border-0 fw-semibold text-end">Pasar Melayu, Sambas</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="border border-bottom-0 border-end-0 border-start-0 border-1"></div>
+      <div class="container bg-white my-5">
+        <div class="text-center">
+          <img src="assets/logo.png" alt="logo" width="160" height="75" />
+          <div class="row gy-3 gy-md-5 gy-xl-0 align-items-sm-center mt-4">
+            <div class="col-xs-12 col-xl-12 order-2 order-xl-1">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link link-secondary px-2 px-md-3" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-secondary px-2 px-md-3" href="wisata.html">Wisata</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-secondary px-2 px-md-3" href="kuliner.html">Kuliner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-secondary px-2 px-md-3" href="hotelPenginapan.html">Hotel & Penginapan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-secondary px-2 px-md-3" href="event.html">Event</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-secondary px-2 px-md-3" href="senibudaya.html">Seni Budaya</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-secondary px-2 px-md-3" href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-xl-12 order-2 order-xl-1 mt-4">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link link-dark px-3 text-secondary" href="#!">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark px-3 text-secondary" href="#!">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path
+                      d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark px-3 text-secondary" href="#!">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark px-3 text-secondary" href="#!">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-xl-12 order-2 order-xl-1 mt-4">
+            <h6 class="text-secondary">Copyright ©2023. Pemerintah Kabupaten Sambas</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
