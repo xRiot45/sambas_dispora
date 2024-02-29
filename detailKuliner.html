@@ -80,10 +80,10 @@
         </div>
         <div class="d-block">
           <h1 class="fw-bold text-primary">Sambas Food Stall</h1>
-          <span>Wisata Kuliner</span>
+          <span class="text-secondary">Wisata Kuliner</span>
         </div>
 
-        <!-- Gambar -->
+        <!-- Carousel -->
         <div id="carouselExample" class="carousel slide mt-5">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -96,11 +96,11 @@
               <img src="assets/detail-kuliner.png" class="d-block w-100 rounded-4" alt="..." />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <iconify-icon icon="ic:baseline-arrow-circle-left" class="carousel-control-prev-icon text-white" width="3rem" height="3rem"></iconify-icon>
+          <button class="carousel-control-prev text-white" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <iconify-icon icon="ic:baseline-arrow-circle-left" class="text-white" width="3rem" height="3rem"></iconify-icon>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <iconify-icon icon="ic:baseline-arrow-circle-right" class="carousel-control-next-icon text-white" width="3rem" height="3rem"></iconify-icon>
+          <button class="carousel-control-next text-white" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <iconify-icon icon="ic:baseline-arrow-circle-right" class="text-white" width="3rem" height="3rem"></iconify-icon>
           </button>
         </div>
 
@@ -110,23 +110,59 @@
             <div class="col-lg-7 mb-4">
               <ul class="nav nav-pills mb-3 justify-content-lg-start justify-content-md-start justify-content-between gap-md-4" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                  <button
+                    class="nav-link active fw-semibold"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
                     Deskripsi
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-menu-tab" data-bs-toggle="pill" data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                  <button
+                    class="nav-link fw-semibold"
+                    id="pills-menu-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-menu"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
                     Menu Makanan
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                  <button
+                    class="nav-link fw-semibold"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
                     Maps
                   </button>
                 </li>
 
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                  <button
+                    class="nav-link fw-semibold"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
                     Pesan & Kesan
                   </button>
                 </li>
@@ -134,7 +170,7 @@
 
               <div class="tab-content" id="pills-tabContent">
                 <!-- Deskripsi Tabs -->
-                <div class="tab-pane fade show active mt-4" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <div class="tab-pane fade show active mt-4 text-secondary" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                   Tatkala Anda menyusuri keajaban ekologi ini, Anda akan disambut dengan penghuni aslinya, antara lain berang-berang, burung raja-udang, dan burung madu. Anda dapat menjumpai kepiting
                   ikan gelodok, dan lobster lumpur di habitat aslinya, dan dapat disaksikan dari pos pengamat yang berada di sekitar taman.
                 </div>
@@ -148,9 +184,9 @@
                         <img src="assets/menu-makanan-1.png" alt="" class="w-100 mb-3" />
                       </div>
                       <div class="col-md-9 col-12">
-                        <h4>Biryani Khas Indonesia</h4>
+                        <h5 class="fw-semibold">Biryani Khas Indonesia</h5>
                         <span class="text-primary fst-italic fw-bold">Rp.10.000</span>
-                        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate</p>
+                        <p class="mt-2">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate</p>
                       </div>
                     </div>
 
@@ -160,9 +196,9 @@
                         <img src="assets/menu-makanan-2.png" alt="" class="w-100 mb-3" />
                       </div>
                       <div class="col-md-9 col-12">
-                        <h4>Ayam Sambal Hijau</h4>
+                        <h5 class="fw-semibold">Ayam Sambal Hijau</h5>
                         <span class="text-primary fst-italic fw-bold">Rp.10.000</span>
-                        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate</p>
+                        <p class="mt-2">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate</p>
                       </div>
                     </div>
 
@@ -172,9 +208,9 @@
                         <img src="assets/menu-makanan-3.png" alt="" class="w-100 mb-3" />
                       </div>
                       <div class="col-md-9 col-12">
-                        <h4>Bubur Pedas</h4>
+                        <h5 class="fw-semibold">Bubur Pedas</h5>
                         <span class="text-primary fst-italic fw-bold">Rp.10.000</span>
-                        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate</p>
+                        <p class="mt-2">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate</p>
                       </div>
                     </div>
                   </div>
@@ -195,7 +231,7 @@
                     ></iframe>
                   </div>
 
-                  <button class="btn btn-primary p-3 mt-3 d-flex ms-auto rounded-3">
+                  <button class="btn btn-primary p-3 mt-3 d-flex ms-auto rounded-3 fw-semibold">
                     <a
                       href="https://www.google.com/maps/place/Kabupaten+Sambas,+Kalimantan+Barat/@1.4890085,108.6696334,9z/data=!3m1!4b1!4m6!3m5!1s0x31e4c6f5a0740299:0x6c63ef7cfcd2b27c!8m2!3d1.3625191!4d109.2831531!16s%2Fm%2F0dsb8tg?entry=ttu"
                       class="text-white text-decoration-none"
@@ -222,12 +258,12 @@
                       </div>
                       <div class="col-12">
                         <div class="mb-3">
-                          <label for="isiPesan" class="form-label">Isi Pesan</label>
+                          <label for="isiPesan" class="form-label fw-bold">Isi Pesan</label>
                           <textarea class="form-control p-4 rounded-4" id="isiPesan" rows="8" placeholder="Masukkan Isi Pesan Disini..."></textarea>
                         </div>
                       </div>
                     </div>
-                    <button class="btn btn-primary p-3 mt-3 d-flex ms-auto rounded-3 text-white">Posting Pesan & Kesan</button>
+                    <button class="btn btn-primary p-3 mt-3 d-flex ms-auto rounded-3 text-white fw-semibold">Posting Pesan & Kesan</button>
                   </form>
                   <hr class="my-5" />
                   <div id="pesanKesan">
