@@ -91,6 +91,20 @@
         } /* Gerakkan setengah lebar track */
       }
 
+      .swiper-slide {
+        opacity: 0.5; /* Default opacity for all slides */
+        transition: opacity 0.3s ease; /* Smooth transition */
+      }
+
+      /* Slide pertama (index ke-0) tidak memiliki opacity secara default */
+      .swiper-slide:first-child {
+        opacity: 1;
+      }
+
+      .swiper-slide.active {
+        opacity: 1; /* Full opacity for clicked slide */
+      }
+
       .swiper-slide span {
         cursor: pointer;
       }
@@ -1273,6 +1287,20 @@
 
       swiperSlides.forEach((slide, index) => {
         slide.addEventListener('click', function () {
+          // Hilangkan kelas 'active' dari semua slide
+          swiperSlides.forEach((s) => s.classList.remove('active'));
+
+          // Tambahkan kelas 'active' ke slide yang diklik
+          slide.classList.add('active');
+
+          // Jika slide selain index 0 diklik, berikan opacity ke slide ke-0
+          if (index !== 0) {
+            swiperSlides[0].style.opacity = '0.5';
+          } else {
+            swiperSlides[0].style.opacity = '1';
+          }
+
+          // Logika untuk menampilkan kategori sesuai dengan index
           if (index === 0) {
             kategoriParent1.style.display = 'block';
             kategoriParent2.style.display = 'none';
