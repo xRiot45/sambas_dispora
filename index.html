@@ -15,6 +15,9 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- Video JS -->
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+
     <style>
       body {
         margin: 0;
@@ -65,7 +68,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.4);
         z-index: 1;
       }
 
@@ -86,6 +89,10 @@
         100% {
           transform: translateX(-1000%);
         } /* Gerakkan setengah lebar track */
+      }
+
+      .swiper-slide span {
+        cursor: pointer;
       }
     </style>
   </head>
@@ -161,126 +168,141 @@
 
     <!-- Hero Section -->
     <section id="hero">
-      <div id="carouselExample" class="carousel">
-        <div class="carousel-inner">
-          <!-- Carousel 1 -->
-          <div class="carousel-item active position-relative">
-            <img src="assets/image-carousel.png" class="carousel-image w-100" alt="slide-img-1" />
-            <div class="container">
-              <div class="position-absolute text-white mb-5 container" style="top: 50%; transform: translateY(-50%)">
-                <h1 class="display-4 fw-bold">10 Hotel Terbaik Untuk Liburan</h1>
+      <div>
+        <div class="position-relative">
+          <!-- Kategori Parent Start -->
+          <div id="kategori-parent1" style="display: block" class="kategori-parent kategori-parent-show">
+            <div class="overlay"></div>
+            <img id="slide-image1" src="assets/image-carousel.png" class="slide-image" alt="slide-img-1" />
+            <div class="container mb-5">
+              <div class="position-absolute text-white" style="top: 50%; transform: translateY(-50%); z-index: 9999">
+                <h1 id="slide-title1" class="display-4 fw-bold">10 Hotel Terbaik Untuk Liburan</h1>
                 <p class="fw-normal w-75 d-md-block d-none">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, officiis mollitia! Ea est aut ipsam ipsum, voluptate vitae nemo beatae deserunt sequi quasi laboriosam totam earum
-                  inventore! Facilis illo ex accusamus explicabo eum modi repellat magnam labore nam eius minima, error corporis iure hic numquam impedit sint laborum suscipit atque!
+                  inventore!
                 </p>
                 <div class="d-flex align-items-center gap-2 mt-4">
                   <span>
-                    <a href="#" class="text-white text-decoration-none">Selengkapnya </a>
+                    <a href="detailHotelPenginapan.html" class="text-white text-decoration-none">Selengkapnya</a>
                   </span>
                   <iconify-icon icon="formkit:arrowright" class="text-white" width="2rem" height="2rem"></iconify-icon>
-                </div>
-              </div>
-
-              <!-- Berita Terkini -->
-              <div class="d-flex gap-5"></div>
-              <div class="position-absolute bottom-0 my-5">
-                <div class="row">
-                  <div class="col">
-                    <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2"></div>
-                    <div class="d-block">
-                      <h4 class="text-primary mt-3 mb-3 fw-semibold">Berita Terkini</h4>
-                      <span class="fs-4 text-white">10 Hotel Terbaik Untuk Liburan</span>
-                      <p class="fs-6 mt-1 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
-                    </div>
-                  </div>
-                  <!-- <div class="col">
-                  <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2">
-                    <h3 class="text-primary mt-4 mb-3 fw-semibold">Berita Terkini</h3>
-                    <span class="fs-5 text-white">10 Hotel Terbaik Untuk Liburan</span>
-                    <p class="fs-6 mt-2 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
-                  </div>
-                </div> -->
-                  <!-- <div class="col">
-                  <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2">
-                    <h3 class="text-primary mt-4 mb-3 fw-semibold">Berita Terkini</h3>
-                    <span class="fs-5 text-white">10 Hotel Terbaik Untuk Liburan</span>
-                    <p class="fs-6 mt-2 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
-                  </div>
-                </div> -->
-                </div>
-              </div>
-
-              <div class="position-absolute bottom-0 my-5">
-                <div class="row">
-                  <div class="col">
-                    <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2"></div>
-                    <div class="d-block">
-                      <h4 class="text-primary mt-3 mb-3 fw-semibold">Berita Terkini</h4>
-                      <span class="fs-4 text-white">10 Hotel Terbaik Untuk Liburan</span>
-                      <p class="fs-6 mt-1 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
-                    </div>
-                  </div>
-                  <!-- <div class="col">
-                  <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2">
-                    <h3 class="text-primary mt-4 mb-3 fw-semibold">Berita Terkini</h3>
-                    <span class="fs-5 text-white">10 Hotel Terbaik Untuk Liburan</span>
-                    <p class="fs-6 mt-2 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
-                  </div>
-                </div> -->
-                  <!-- <div class="col">
-                  <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2">
-                    <h3 class="text-primary mt-4 mb-3 fw-semibold">Berita Terkini</h3>
-                    <span class="fs-5 text-white">10 Hotel Terbaik Untuk Liburan</span>
-                    <p class="fs-6 mt-2 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
-                  </div>
-                </div> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Carousel 2 -->
-          <div class="carousel-item position-relative">
-            <img src="assets/image-carousel.png" class="carousel-image w-auto" alt="slide-img-1" />
-            <div class="container">
-              <div class="position-absolute text-white mb-5 container" style="top: 50%; transform: translateY(-50%)">
-                <h1 class="display-4 fw-bold">10 Hotel Terbaik Untuk Liburan</h1>
+          <!-- Kategori Parent 2  -->
+          <div id="kategori-parent2" style="display: none" class="kategori-parent kategori-parent-hide">
+            <div class="overlay"></div>
+            <img id="slide-image2" src="assets/candi-indonesia.png" class="slide-image" alt="slide-img-2" />
+            <div class="container mb-5">
+              <div class="position-absolute text-white" style="top: 50%; transform: translateY(-50%); z-index: 9999">
+                <h1 id="slide-title2" class="display-4 fw-bold">Candi Indonesia</h1>
                 <p class="fw-normal w-75 d-md-block d-none">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, officiis mollitia! Ea est aut ipsam ipsum, voluptate vitae nemo beatae deserunt sequi quasi laboriosam totam earum
-                  inventore! Facilis illo ex accusamus explicabo eum modi repellat magnam labore nam eius minima, error corporis iure hic numquam impedit sint laborum suscipit atque!
+                  inventore!
                 </p>
                 <div class="d-flex align-items-center gap-2 mt-4">
                   <span>
-                    <a href="#" class="text-white text-decoration-none">Selengkapnya </a>
+                    <a href="detailBlog.html" class="text-white text-decoration-none">Selengkapnya</a>
                   </span>
                   <iconify-icon icon="formkit:arrowright" class="text-white" width="2rem" height="2rem"></iconify-icon>
                 </div>
               </div>
-              <!-- Berita Terkini -->
-              <div class="position-absolute bottom-0 my-5">
-                <div class="row">
-                  <div class="col">
+            </div>
+          </div>
+
+          <!-- Kategori Parent 3 -->
+          <div id="kategori-parent3" style="display: none" class="kategori-parent kategori-parent-hide">
+            <div class="overlay"></div>
+            <img id="slide-image2" src="assets/festival-batik-indonesia.png" class="slide-image" alt="slide-img-2" />
+            <div class="container mb-5">
+              <div class="position-absolute text-white" style="top: 50%; transform: translateY(-50%); z-index: 9999">
+                <h1 id="slide-title2" class="display-4 fw-bold">Pekan Batik Nusantara</h1>
+                <p class="fw-normal w-75 d-md-block d-none">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, officiis mollitia! Ea est aut ipsam ipsum, voluptate vitae nemo beatae deserunt sequi quasi laboriosam totam earum
+                  inventore!
+                </p>
+                <div class="d-flex align-items-center gap-2 mt-4">
+                  <span>
+                    <a href="detailEvent.html" class="text-white text-decoration-none">Selengkapnya</a>
+                  </span>
+                  <iconify-icon icon="formkit:arrowright" class="text-white" width="2rem" height="2rem"></iconify-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kategori Parent 4 -->
+          <div id="kategori-parent4" style="display: none" class="kategori-parent kategori-parent-hide">
+            <div class="overlay"></div>
+            <video autoplay class="slide-image" loop>
+              <source src="/assets/video-1.mp4" type="video/mp4" />
+            </video>
+            <div class="container mb-5">
+              <div class="position-absolute text-white" style="top: 50%; transform: translateY(-50%); z-index: 9999">
+                <h1 id="slide-title2" class="display-4 fw-bold">Festival Lompat Batu</h1>
+                <p class="fw-normal w-75 d-md-block d-none">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, officiis mollitia! Ea est aut ipsam ipsum, voluptate vitae nemo beatae deserunt sequi quasi laboriosam totam earum
+                  inventore!
+                </p>
+                <div class="d-flex align-items-center gap-2 mt-4">
+                  <span>
+                    <a href="detailWisata.html" class="text-white text-decoration-none">Selengkapnya</a>
+                  </span>
+                  <iconify-icon icon="formkit:arrowright" class="text-white" width="2rem" height="2rem"></iconify-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kategori Parent End -->
+
+          <!-- Kategori  -->
+          <div class="container">
+            <!-- Kategori Swiper -->
+            <div class="position-absolute bottom-0 start-0 end-0 container my-5">
+              <div class="swiper mySwiperKategori">
+                <div class="swiper-wrapper">
+                  <!-- Kategori Swiper 1 -->
+                  <div class="swiper-slide" data-title="10 Hotel Terbaik Untuk Liburan" data-img="assets/image-carousel.png">
                     <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2"></div>
                     <div class="d-block">
-                      <h4 class="text-primary mt-3 mb-3 fw-semibold">Berita Terkini</h4>
-                      <span class="fs-4 text-white">10 Hotel Terbaik Untuk Liburan</span>
-                      <p class="fs-6 mt-1 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
+                      <h4 class="text-primary mt-4 mb-3 fw-semibold">Berita Terkini</h4>
+                      <span class="fs-4 text-white fw-bold">10 Hotel Terbaik Untuk Liburan</span>
+                      <p class="fs-6 mt-1 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, veniam?</p>
                     </div>
                   </div>
-                  <!-- <div class="col">
-                <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2">
-                  <h3 class="text-primary mt-4 mb-3 fw-semibold">Berita Terkini</h3>
-                  <span class="fs-5 text-white">10 Hotel Terbaik Untuk Liburan</span>
-                  <p class="fs-6 mt-2 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
-                </div>
-              </div> -->
-                  <!-- <div class="col">
-                <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2">
-                  <h3 class="text-primary mt-4 mb-3 fw-semibold">Berita Terkini</h3>
-                  <span class="fs-5 text-white">10 Hotel Terbaik Untuk Liburan</span>
-                  <p class="fs-6 mt-2 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
-                </div>
-              </div> -->
+
+                  <!-- Kategori Swiper 2 -->
+                  <div class="swiper-slide" data-title="Candi Indonesia" data-img="assets/candi-indonesia.png">
+                    <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2"></div>
+                    <div class="d-block">
+                      <h4 class="text-primary mt-4 mb-3 fw-semibold">Blog</h4>
+                      <span class="fs-4 text-white fw-bold">Candi Indonesia</span>
+                      <p class="fs-6 mt-2 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, veniam?</p>
+                    </div>
+                  </div>
+
+                  <!-- Kategori Swiper 3 -->
+                  <div class="swiper-slide" data-title="Pekan Batik Nusantara" data-img="assets/festival-batik-indonesia.png">
+                    <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2"></div>
+                    <div class="d-block">
+                      <h4 class="text-primary mt-4 mb-3 fw-semibold">Event</h4>
+                      <span class="fs-4 text-white fw-bold">Pekan Batik Nusantara</span>
+                      <p class="fs-6 mt-2 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, veniam?</p>
+                    </div>
+                  </div>
+
+                  <!-- Kategori Swiper 4 -->
+                  <div class="swiper-slide" data-title="Festival Lompat Batu" data-img="assets/video-1.mp4">
+                    <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2"></div>
+                    <div class="d-block">
+                      <h4 class="text-primary mt-4 mb-3 fw-semibold">Festival</h4>
+                      <span class="fs-4 text-white fw-bold">Festival Lompat Batu</span>
+                      <p class="fs-6 mt-2 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, veniam?</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1161,6 +1183,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Script Video JS -->
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+
     <!-- Script Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -1178,6 +1203,25 @@
           // Breakpoint untuk layar hp
           0: {
             slidesPerView: 1,
+          },
+        },
+      });
+    </script>
+
+    <!-- Swiper kategori -->
+    <script>
+      var swiper = new Swiper('.mySwiperKategori', {
+        loop: true,
+        slidesPerView: 1, // Default untuk mobile
+        spaceBetween: 30,
+        breakpoints: {
+          768: {
+            // Untuk ukuran layar tablet dan di atasnya
+            slidesPerView: 2, // Menampilkan 2 slide pada ukuran tablet
+          },
+          1024: {
+            // Untuk ukuran layar desktop
+            slidesPerView: 3, // Menampilkan 3 slide pada ukuran desktop
           },
         },
       });
@@ -1214,6 +1258,48 @@
 
         closeSearch.addEventListener('click', function () {
           searchForm.classList.add('d-none'); // Sembunyikan form ketika tombol X diklik
+        });
+      });
+    </script>
+
+    <!-- Script change kategori parent -->
+    <script>
+      const kategoriParent1 = document.getElementById('kategori-parent1');
+      const kategoriParent2 = document.getElementById('kategori-parent2');
+      const kategoriParent3 = document.getElementById('kategori-parent3');
+      const kategoriParent4 = document.getElementById('kategori-parent4');
+
+      const swiperSlides = document.querySelectorAll('.swiper-slide');
+
+      swiperSlides.forEach((slide, index) => {
+        slide.addEventListener('click', function () {
+          if (index === 0) {
+            kategoriParent1.style.display = 'block';
+            kategoriParent2.style.display = 'none';
+            kategoriParent3.style.display = 'none';
+            kategoriParent4.style.display = 'none';
+          }
+
+          if (index === 1) {
+            kategoriParent2.style.display = 'block';
+            kategoriParent1.style.display = 'none';
+            kategoriParent3.style.display = 'none';
+            kategoriParent4.style.display = 'none';
+          }
+
+          if (index === 2) {
+            kategoriParent3.style.display = 'block';
+            kategoriParent1.style.display = 'none';
+            kategoriParent2.style.display = 'none';
+            kategoriParent4.style.display = 'none';
+          }
+
+          if (index === 3) {
+            kategoriParent4.style.display = 'block';
+            kategoriParent1.style.display = 'none';
+            kategoriParent2.style.display = 'none';
+            kategoriParent3.style.display = 'none';
+          }
         });
       });
     </script>
