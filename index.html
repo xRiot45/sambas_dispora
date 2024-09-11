@@ -14,6 +14,53 @@
 
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+      .slider {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%; /* Adjust height as needed */
+      }
+
+      .slider-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slide {
+        min-width: 100%;
+        position: relative;
+      }
+
+      .slide-image {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+
+      .slide-overlay {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: start;
+
+        z-index: 2; /* Pastikan teks di atas overlay */
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -69,7 +116,7 @@
 
     <!-- Hero Section -->
     <section id="hero">
-      <div id="carouselExample" class="carousel slide">
+      <div id="carouselExample" class="carousel">
         <div class="carousel-inner">
           <!-- Carousel 1 -->
           <div class="carousel-item active position-relative">
@@ -195,12 +242,6 @@
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev text-white" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <iconify-icon icon="ic:baseline-arrow-circle-left" class="text-white" width="3rem" height="3rem"></iconify-icon>
-      </button>
-      <button class="carousel-control-next text-white" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <iconify-icon icon="ic:baseline-arrow-circle-right" class="text-white" width="3rem" height="3rem"></iconify-icon>
-      </button>
     </section>
 
     <!-- Inslight -->
@@ -419,9 +460,11 @@
             >
               <div class="position-absolute bottom-0 mb-4 px-4 w-100">
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-block text-white">
-                    <h5 class="fw-semibold">Ayam Sambal Tenggelam</h5>
-                  </div>
+                  <a href="detailKuliner.html" class="text-decoration-none">
+                    <div class="d-block text-white">
+                      <h5 class="fw-semibold">Ayam Sambal Tenggelam</h5>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -435,9 +478,11 @@
             >
               <div class="position-absolute bottom-0 mb-4 px-4 w-100">
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-block text-white">
-                    <h5 class="fw-semibold">Sate Khas Sambas</h5>
-                  </div>
+                  <a href="detailKuliner.html" class="text-decoration-none">
+                    <div class="d-block text-white">
+                      <h5 class="fw-semibold">Sate Khas Sambas</h5>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -451,9 +496,11 @@
             >
               <div class="position-absolute bottom-0 mb-4 px-4 w-100">
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-block text-white">
-                    <h5 class="fw-semibold">Nasi Goreng Paddas</h5>
-                  </div>
+                  <a href="detailKuliner.html" class="text-decoration-none">
+                    <div class="d-block text-white">
+                      <h5 class="fw-semibold">Nasi Goreng Paddas</h5>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -489,7 +536,9 @@
               <div class="position-absolute bottom-0 mb-4 px-4 w-100">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="d-block text-white">
-                    <h6 class="fw-semibold">Hotel Sambas Indah</h6>
+                    <a href="detailHotelPenginapan.html" class="text-decoration-none text-white">
+                      <h6 class="fw-semibold">Hotel Sambas Indah</h6>
+                    </a>
                     <span>Pasar Melayu, Sambas</span>
                   </div>
                 </div>
@@ -506,7 +555,9 @@
               <div class="position-absolute bottom-0 mb-4 px-4 w-100">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="d-block text-white">
-                    <h6 class="fw-semibold">W Hotel</h6>
+                    <a href="detailHotelPenginapan.html" class="text-decoration-none text-white">
+                      <h6 class="fw-semibold">W Hotel</h6>
+                    </a>
                     <span>Pasar Melayu, Sambas</span>
                   </div>
                 </div>
@@ -523,7 +574,9 @@
               <div class="position-absolute bottom-0 mb-4 px-4 w-100">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="d-block text-white">
-                    <h6 class="fw-semibold">Hotel Paredes 2</h6>
+                    <a href="detailHotelPenginapan.html" class="text-decoration-none text-white">
+                      <h6 class="fw-semibold">Hotel Paredes 2</h6>
+                    </a>
                     <span>Pasar Melayu, Sambas</span>
                   </div>
                 </div>
@@ -540,7 +593,9 @@
               <div class="position-absolute bottom-0 mb-4 px-4 w-100">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="d-block text-white">
-                    <h6 class="fw-semibold">Hotel Terigas</h6>
+                    <a href="detailHotelPenginapan.html" class="text-decoration-none text-white">
+                      <h6 class="fw-semibold">Hotel Terigas</h6>
+                    </a>
                     <span>Pasar Melayu, Sambas</span>
                   </div>
                 </div>
@@ -551,14 +606,43 @@
       </div>
     </section>
 
-    <!-- Food -->
-    <section id="food">
-      <div class="carousel-inner">
-        <div class="carousel-item active position-relative mt-5">
-          <img src="assets/food.png" class="carousel-image w-auto" alt="slide-img-1" />
-          <div class="container">
-            <div class="position-absolute text-white mb-5 container" style="top: 50%; transform: translateY(-50%)">
-              <h1 class="display-4 fw-bold">Food Court Sambas Hari Ini Resmi Dibuka!</h1>
+    <!-- Ads -->
+    <section id="ads">
+      <div class="slider mt-5">
+        <div class="slider-inner">
+          <div class="slide">
+            <div class="overlay"></div>
+            <img src="assets/ads-1.png" class="slide-image" alt="slide-img-1" />
+            <div class="slide-overlay">
+              <h1 class="fw-bold">Food Court Sambas Hari Ini Resmi Dibuka!</h1>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="overlay"></div>
+            <img src="assets/ads-2.png" class="slide-image" alt="slide-img-2" />
+            <div class="slide-overlay">
+              <h1 class="fw-bold text-start">Food Court Sambas Hari Ini Resmi Dibuka!</h1>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="overlay"></div>
+            <img src="assets/ads-3.png" class="slide-image" alt="slide-img-3" />
+            <div class="slide-overlay">
+              <h1 class="fw-bold">Food Court Sambas Hari Ini Resmi Dibuka!</h1>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="overlay"></div>
+            <img src="assets/ads-4.png" class="slide-image" alt="slide-img-4" />
+            <div class="slide-overlay">
+              <h1 class="fw-bold">Food Court Sambas Hari Ini Resmi Dibuka!</h1>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="overlay"></div>
+            <img src="assets/ads-5.png" class="slide-image" alt="slide-img-5" />
+            <div class="slide-overlay">
+              <h1 class="fw-bold">Food Court Sambas Hari Ini Resmi Dibuka!</h1>
             </div>
           </div>
         </div>
@@ -1033,6 +1117,65 @@
         },
         loop: true,
       });
+    </script>
+
+    <!-- Script ads infinite carousel -->
+    <script>
+      const slides = document.querySelectorAll('.slide');
+      const slideCount = slides.length;
+      let index = 0;
+      let interval;
+
+      // Clone the first slide to append it to the end for smooth infinite loop
+      const firstSlide = slides[0].cloneNode(true);
+      document.querySelector('.slider-inner').appendChild(firstSlide);
+
+      function startSlideShow() {
+        interval = setInterval(nextSlide, 2000); // Adjust the interval for desired speed
+      }
+
+      function showSlide(n) {
+        const slidesWidth = document.querySelector('.slide').offsetWidth;
+        const offset = -n * slidesWidth;
+        document.querySelector('.slider-inner').style.transform = `translateX(${offset}px)`;
+      }
+
+      function nextSlide() {
+        const slidesWidth = document.querySelector('.slide').offsetWidth;
+        index++;
+        if (index >= slideCount) {
+          // Jump to the start slide immediately
+          document.querySelector('.slider-inner').style.transition = 'none';
+          index = 0;
+          showSlide(index);
+          setTimeout(() => {
+            document.querySelector('.slider-inner').style.transition = 'transform 1s ease-in-out';
+          }, 50); // Ensure transition is reset
+        } else {
+          document.querySelector('.slider-inner').style.transition = 'transform 1s ease-in-out';
+          showSlide(index);
+        }
+      }
+
+      function prevSlide() {
+        const slidesWidth = document.querySelector('.slide').offsetWidth;
+        index--;
+        if (index < 0) {
+          // Jump to the end slide immediately
+          document.querySelector('.slider-inner').style.transition = 'none';
+          index = slideCount - 1;
+          showSlide(index);
+          setTimeout(() => {
+            document.querySelector('.slider-inner').style.transition = 'transform 1s ease-in-out';
+          }, 50); // Ensure transition is reset
+        } else {
+          document.querySelector('.slider-inner').style.transition = 'transform 1s ease-in-out';
+          showSlide(index);
+        }
+      }
+
+      // Start the slider
+      startSlideShow();
     </script>
   </body>
 </html>
