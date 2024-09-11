@@ -73,7 +73,7 @@
         <div class="carousel-inner">
           <!-- Carousel 1 -->
           <div class="carousel-item active position-relative">
-            <img src="assets/image-carousel.png" class="carousel-image w-auto" alt="slide-img-1" />
+            <img src="assets/image-carousel.png" class="carousel-image w-100" alt="slide-img-1" />
             <div class="container">
               <div class="position-absolute text-white mb-5 container" style="top: 50%; transform: translateY(-50%)">
                 <h1 class="display-4 fw-bold">10 Hotel Terbaik Untuk Liburan</h1>
@@ -90,6 +90,34 @@
               </div>
 
               <!-- Berita Terkini -->
+              <div class="d-flex gap-5"></div>
+              <div class="position-absolute bottom-0 my-5">
+                <div class="row">
+                  <div class="col">
+                    <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2"></div>
+                    <div class="d-block">
+                      <h4 class="text-primary mt-3 mb-3 fw-semibold">Berita Terkini</h4>
+                      <span class="fs-4 text-white">10 Hotel Terbaik Untuk Liburan</span>
+                      <p class="fs-6 mt-1 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
+                    </div>
+                  </div>
+                  <!-- <div class="col">
+                  <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2">
+                    <h3 class="text-primary mt-4 mb-3 fw-semibold">Berita Terkini</h3>
+                    <span class="fs-5 text-white">10 Hotel Terbaik Untuk Liburan</span>
+                    <p class="fs-6 mt-2 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
+                  </div>
+                </div> -->
+                  <!-- <div class="col">
+                  <div class="border border-bottom-0 border-end-0 border-start-0 border-primary border-2">
+                    <h3 class="text-primary mt-4 mb-3 fw-semibold">Berita Terkini</h3>
+                    <span class="fs-5 text-white">10 Hotel Terbaik Untuk Liburan</span>
+                    <p class="fs-6 mt-2 text-white">Berikut adalah Hotel terbaik untuk kamu!</p>
+                  </div>
+                </div> -->
+                </div>
+              </div>
+
               <div class="position-absolute bottom-0 my-5">
                 <div class="row">
                   <div class="col">
@@ -672,64 +700,211 @@
     <section id="galeriWisata">
       <div class="container my-5">
         <h4 class="fw-semibold text-center">Galeri Wisata</h4>
+
+        <!-- Swiper Galeri Start-->
         <div class="swiper mySwiper-3D" style="padding-top: 50px; height: 100%">
           <div class="swiper-wrapper">
+            <!-- Galeri 1 -->
             <div class="swiper-slide position-relative" style="background-size: cover; background-position: center; width: 350px">
-              <img src="assets/galeri-1.png" class="d-block" style="width: 100%" />
+              <img src="assets/galeri-1.png" class="d-block" style="width: 100%" data-bs-toggle="modal" data-bs-target="#imageModal-1" />
               <div class="position-absolute bottom-0 mb-4 text-center w-100">
                 <h6 class="text-white fw-semibold">Terbang Bersama Di Sambas</h6>
               </div>
             </div>
-            <div class="swiper-slide" style="background-size: cover; background-position: center; width: 350px">
-              <img src="assets/galeri-1.png" class="d-block" style="width: 100%" />
+
+            <!-- Galeri 2 -->
+            <div class="swiper-slide position-relative" style="background-size: cover; background-position: center; width: 350px">
+              <img src="assets/galeri-2.png" class="d-block" style="width: 100%" data-bs-toggle="modal" data-bs-target="#imageModal-2" />
               <div class="position-absolute bottom-0 mb-4 text-center w-100">
                 <h6 class="text-white fw-semibold">Terbang Bersama Di Sambas</h6>
               </div>
             </div>
-            <div class="swiper-slide" style="background-size: cover; background-position: center; width: 350px">
-              <img src="assets/galeri-1.png" class="d-block" style="width: 100%" />
+
+            <!-- Galeri 3 -->
+            <div class="swiper-slide position-relative" style="background-size: cover; background-position: center; width: 350px">
+              <img src="assets/galeri-3.png" class="d-block" style="width: 100%" data-bs-toggle="modal" data-bs-target="#imageModal-3" />
               <div class="position-absolute bottom-0 mb-4 text-center w-100">
                 <h6 class="text-white fw-semibold">Terbang Bersama Di Sambas</h6>
               </div>
             </div>
-            <div class="swiper-slide" style="background-size: cover; background-position: center; width: 350px">
-              <img src="assets/galeri-1.png" class="d-block" style="width: 100%" />
+
+            <!-- Galeri-4 -->
+            <div class="swiper-slide position-relative" style="background-size: cover; background-position: center; width: 350px">
+              <img src="assets/galeri-4.png" class="d-block" style="width: 100%" data-bs-toggle="modal" data-bs-target="#imageModal-4" />
               <div class="position-absolute bottom-0 mb-4 text-center w-100">
                 <h6 class="text-white fw-semibold">Terbang Bersama Di Sambas</h6>
               </div>
             </div>
-            <div class="swiper-slide" style="background-size: cover; background-position: center; width: 350px">
-              <img src="assets/galeri-1.png" class="d-block" style="width: 100%" />
+
+            <!-- Galeri 5 -->
+            <div class="swiper-slide position-relative" style="background-size: cover; background-position: center; width: 350px">
+              <img src="assets/galeri-5.png" class="d-block" style="width: 100%" data-bs-toggle="modal" data-bs-target="#imageModal-5" />
               <div class="position-absolute bottom-0 mb-4 text-center w-100">
                 <h6 class="text-white fw-semibold">Terbang Bersama Di Sambas</h6>
               </div>
             </div>
-            <div class="swiper-slide" style="background-size: cover; background-position: center; width: 350px">
-              <img src="assets/galeri-1.png" class="d-block" style="width: 100%" />
+
+            <!-- Galeri 6 -->
+            <div class="swiper-slide position-relative" style="background-size: cover; background-position: center; width: 350px">
+              <img src="assets/galeri-6.png" class="d-block" style="width: 100%" data-bs-toggle="modal" data-bs-target="#imageModal-6" />
               <div class="position-absolute bottom-0 mb-4 text-center w-100">
                 <h6 class="text-white fw-semibold">Terbang Bersama Di Sambas</h6>
               </div>
             </div>
-            <div class="swiper-slide" style="background-size: cover; background-position: center; width: 350px">
-              <img src="assets/galeri-1.png" class="d-block" style="width: 100%" />
-              <div class="position-absolute bottom-0 mb-4 text-center w-100">
-                <h6 class="text-white fw-semibold">Terbang Bersama Di Sambas</h6>
-              </div>
-            </div>
-            <div class="swiper-slide" style="background-size: cover; background-position: center; width: 350px">
-              <img src="assets/galeri-1.png" class="d-block" style="width: 100%" />
-              <div class="position-absolute bottom-0 mb-4 text-center w-100">
-                <h6 class="text-white fw-semibold">Terbang Bersama Di Sambas</h6>
-              </div>
-            </div>
-            <div class="swiper-slide" style="background-size: cover; background-position: center; width: 350px">
-              <img src="assets/galeri-1.png" class="d-block" style="width: 100%" />
+
+            <!-- Galeri 7 -->
+            <div class="swiper-slide position-relative" style="background-size: cover; background-position: center; width: 350px">
+              <img src="assets/galeri-7.png" class="d-block" style="width: 100%" data-bs-toggle="modal" data-bs-target="#imageModal-7" />
               <div class="position-absolute bottom-0 mb-4 text-center w-100">
                 <h6 class="text-white fw-semibold">Terbang Bersama Di Sambas</h6>
               </div>
             </div>
           </div>
         </div>
+        <!-- Swiper Galeri End -->
+
+        <!-- Modal Galeri Start -->
+
+        <!-- Modal Galeri 1 -->
+        <div class="modal fade" id="imageModal-1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-5">
+              <div class="modal-body p-0 position-relative">
+                <!-- Close Button positioned at the top-right corner -->
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- Image in modal -->
+                <img src="assets/galeri-1.png" class="img-fluid w-100" alt="Terbang Bersama Di Sambas" />
+
+                <!-- Text inside the modal, positioned at the bottom of the image -->
+                <div class="position-absolute bottom-0 w-100 text-center p-4">
+                  <h5 class="text-white fw-semibold m-0">Terbang Bersama Di Sambas</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Galeri 2 -->
+        <div class="modal fade" id="imageModal-2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-5">
+              <div class="modal-body p-0 position-relative">
+                <!-- Close Button positioned at the top-right corner -->
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- Image in modal -->
+                <img src="assets/galeri-2.png" class="img-fluid w-100" alt="Terbang Bersama Di Sambas" />
+
+                <!-- Text inside the modal, positioned at the bottom of the image -->
+                <div class="position-absolute bottom-0 w-100 text-center p-4">
+                  <h5 class="text-white fw-semibold m-0">Terbang Bersama Di Sambas</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Galeri 3 -->
+        <div class="modal fade" id="imageModal-3" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-5">
+              <div class="modal-body p-0 position-relative">
+                <!-- Close Button positioned at the top-right corner -->
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- Image in modal -->
+                <img src="assets/galeri-3.png" class="img-fluid w-100" alt="Terbang Bersama Di Sambas" />
+
+                <!-- Text inside the modal, positioned at the bottom of the image -->
+                <div class="position-absolute bottom-0 w-100 text-center p-4">
+                  <h5 class="text-white fw-semibold m-0">Terbang Bersama Di Sambas</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Galeri 4 -->
+        <div class="modal fade" id="imageModal-4" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-5">
+              <div class="modal-body p-0 position-relative">
+                <!-- Close Button positioned at the top-right corner -->
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- Image in modal -->
+                <img src="assets/galeri-4.png" class="img-fluid w-100" alt="Terbang Bersama Di Sambas" />
+
+                <!-- Text inside the modal, positioned at the bottom of the image -->
+                <div class="position-absolute bottom-0 w-100 text-center p-4">
+                  <h5 class="text-white fw-semibold m-0">Terbang Bersama Di Sambas</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Galeri 5 -->
+        <div class="modal fade" id="imageModal-5" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-5">
+              <div class="modal-body p-0 position-relative">
+                <!-- Close Button positioned at the top-right corner -->
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- Image in modal -->
+                <img src="assets/galeri-5.png" class="img-fluid w-100" alt="Terbang Bersama Di Sambas" />
+
+                <!-- Text inside the modal, positioned at the bottom of the image -->
+                <div class="position-absolute bottom-0 w-100 text-center p-4">
+                  <h5 class="text-white fw-semibold m-0">Terbang Bersama Di Sambas</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Galeri 6 -->
+        <div class="modal fade" id="imageModal-6" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-5">
+              <div class="modal-body p-0 position-relative">
+                <!-- Close Button positioned at the top-right corner -->
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- Image in modal -->
+                <img src="assets/galeri-6.png" class="img-fluid w-100" alt="Terbang Bersama Di Sambas" />
+
+                <!-- Text inside the modal, positioned at the bottom of the image -->
+                <div class="position-absolute bottom-0 w-100 text-center p-4">
+                  <h5 class="text-white fw-semibold m-0">Terbang Bersama Di Sambas</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Galeri 7 -->
+        <div class="modal fade" id="imageModal-7" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-5">
+              <div class="modal-body p-0 position-relative">
+                <!-- Close Button positioned at the top-right corner -->
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- Image in modal -->
+                <img src="assets/galeri-7.png" class="img-fluid w-100" alt="Terbang Bersama Di Sambas" />
+
+                <!-- Text inside the modal, positioned at the bottom of the image -->
+                <div class="position-absolute bottom-0 w-100 text-center p-4">
+                  <h5 class="text-white fw-semibold m-0">Terbang Bersama Di Sambas</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Galeri End -->
       </div>
     </section>
 
