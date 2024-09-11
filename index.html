@@ -16,16 +16,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
       .slider {
         position: relative;
         overflow: hidden;
         width: 100%;
-        height: 100%; /* Adjust height as needed */
+        height: 100vh; /* Atur tinggi sesuai kebutuhan */
       }
 
-      .slider-inner {
+      .slide-track {
         display: flex;
-        transition: transform 0.5s ease-in-out;
+        width: calc(100% * 2); /* Lebar ganda untuk konten looping */
+        animation: scroll 70s linear infinite; /* Durasi animasi */
       }
 
       .slide {
@@ -35,7 +41,7 @@
 
       .slide-image {
         width: 100%;
-        height: 100vh;
+        height: 100vh; /* Atur tinggi sesuai kebutuhan */
         object-fit: cover;
         object-position: center;
       }
@@ -53,12 +59,20 @@
       .slide-overlay {
         position: absolute;
         top: 50%;
-        left: 40%;
+        left: 50%;
         transform: translate(-50%, -50%);
         color: white;
         text-align: start;
-
         z-index: 2; /* Pastikan teks di atas overlay */
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-1000%);
+        } /* Gerakkan setengah lebar track */
       }
     </style>
   </head>
@@ -609,7 +623,44 @@
     <!-- Ads -->
     <section id="ads">
       <div class="slider mt-5">
-        <div class="slider-inner">
+        <div class="slide-track">
+          <!-- Salin slide untuk loop yang mulus -->
+          <div class="slide">
+            <div class="overlay"></div>
+            <img src="assets/ads-1.png" class="slide-image" alt="slide-img-1" />
+            <div class="slide-overlay">
+              <h1 class="fw-bold">Food Court Sambas Hari Ini Resmi Dibuka!</h1>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="overlay"></div>
+            <img src="assets/ads-2.png" class="slide-image" alt="slide-img-2" />
+            <div class="slide-overlay">
+              <h1 class="fw-bold text-start">Food Court Sambas Hari Ini Resmi Dibuka!</h1>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="overlay"></div>
+            <img src="assets/ads-3.png" class="slide-image" alt="slide-img-3" />
+            <div class="slide-overlay">
+              <h1 class="fw-bold">Food Court Sambas Hari Ini Resmi Dibuka!</h1>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="overlay"></div>
+            <img src="assets/ads-4.png" class="slide-image" alt="slide-img-4" />
+            <div class="slide-overlay">
+              <h1 class="fw-bold">Food Court Sambas Hari Ini Resmi Dibuka!</h1>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="overlay"></div>
+            <img src="assets/ads-5.png" class="slide-image" alt="slide-img-5" />
+            <div class="slide-overlay">
+              <h1 class="fw-bold">Food Court Sambas Hari Ini Resmi Dibuka!</h1>
+            </div>
+          </div>
+          <!-- Duplikasi slides untuk menciptakan efek looping -->
           <div class="slide">
             <div class="overlay"></div>
             <img src="assets/ads-1.png" class="slide-image" alt="slide-img-1" />
@@ -1120,62 +1171,5 @@
     </script>
 
     <!-- Script ads infinite carousel -->
-    <script>
-      const slides = document.querySelectorAll('.slide');
-      const slideCount = slides.length;
-      let index = 0;
-      let interval;
-
-      // Clone the first slide to append it to the end for smooth infinite loop
-      const firstSlide = slides[0].cloneNode(true);
-      document.querySelector('.slider-inner').appendChild(firstSlide);
-
-      function startSlideShow() {
-        interval = setInterval(nextSlide, 2000); // Adjust the interval for desired speed
-      }
-
-      function showSlide(n) {
-        const slidesWidth = document.querySelector('.slide').offsetWidth;
-        const offset = -n * slidesWidth;
-        document.querySelector('.slider-inner').style.transform = `translateX(${offset}px)`;
-      }
-
-      function nextSlide() {
-        const slidesWidth = document.querySelector('.slide').offsetWidth;
-        index++;
-        if (index >= slideCount) {
-          // Jump to the start slide immediately
-          document.querySelector('.slider-inner').style.transition = 'none';
-          index = 0;
-          showSlide(index);
-          setTimeout(() => {
-            document.querySelector('.slider-inner').style.transition = 'transform 1s ease-in-out';
-          }, 50); // Ensure transition is reset
-        } else {
-          document.querySelector('.slider-inner').style.transition = 'transform 1s ease-in-out';
-          showSlide(index);
-        }
-      }
-
-      function prevSlide() {
-        const slidesWidth = document.querySelector('.slide').offsetWidth;
-        index--;
-        if (index < 0) {
-          // Jump to the end slide immediately
-          document.querySelector('.slider-inner').style.transition = 'none';
-          index = slideCount - 1;
-          showSlide(index);
-          setTimeout(() => {
-            document.querySelector('.slider-inner').style.transition = 'transform 1s ease-in-out';
-          }, 50); // Ensure transition is reset
-        } else {
-          document.querySelector('.slider-inner').style.transition = 'transform 1s ease-in-out';
-          showSlide(index);
-        }
-      }
-
-      // Start the slider
-      startSlideShow();
-    </script>
   </body>
 </html>
