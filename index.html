@@ -21,6 +21,19 @@
         font-family: Arial, sans-serif;
       }
 
+      /* Jika perlu styling tambahan */
+      .modal-content {
+        border-radius: 8px; /* Tambahkan radius jika diinginkan */
+      }
+
+      .modal-header {
+        border-bottom: none; /* Hapus border bawah modal header */
+      }
+
+      .modal-body {
+        padding: 1rem; /* Padding untuk body modal */
+      }
+
       .slider {
         position: relative;
         overflow: hidden;
@@ -100,7 +113,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Beranda</a>
               </li>
-
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Destinasi </a>
                 <ul class="dropdown-menu">
@@ -109,7 +121,6 @@
                   <li><a class="dropdown-item" href="hotelpenginapan.html">Hotel Dan Penginapan</a></li>
                 </ul>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="event.html">Event</a>
               </li>
@@ -119,13 +130,33 @@
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
               </li>
-              <li class="nav-item" role="search">
-                <iconify-icon icon="material-symbols:search" class="text-primary nav-link" width="1.5rem" height="1.5rem"></iconify-icon>
+              <li class="nav-item">
+                <button class="btn btn-link text-primary" data-bs-toggle="modal" data-bs-target="#searchModal" aria-label="Search">
+                  <iconify-icon icon="material-symbols:search" width="1.5rem" height="1.5rem"></iconify-icon>
+                </button>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+
+      <!-- Modal Pencarian -->
+      <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content p-2 rounded-4">
+            <div class="modal-header">
+              <h5 class="modal-title" id="searchModalLabel">Cari Data</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mt-0">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 p-3" type="search" placeholder="Cari data disini..." aria-label="Search" />
+                <button class="btn btn-primary text-white w-25" type="submit">Cari Data</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Hero Section -->
@@ -1170,6 +1201,21 @@
       });
     </script>
 
-    <!-- Script ads infinite carousel -->
+    <!-- Script form search -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const searchItem = document.getElementById('searchItem');
+        const searchForm = document.getElementById('searchForm');
+        const closeSearch = document.getElementById('closeSearch');
+
+        searchItem.addEventListener('click', function () {
+          searchForm.classList.toggle('d-none'); // Toggle class d-none untuk menampilkan/menyembunyikan form
+        });
+
+        closeSearch.addEventListener('click', function () {
+          searchForm.classList.add('d-none'); // Sembunyikan form ketika tombol X diklik
+        });
+      });
+    </script>
   </body>
 </html>
